@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300" rel="stylesheet" type="text/css"> <!-- Google fonts -->
+        <link rel="stylesheet" href="css/bootstrap.min.css"> <!-- This is applied before anything below it -->
+        <link rel="stylesheet" href="css/styles.css">
+        <title>Build a Portfolio</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <img class="img-responsive title-logo" src="images/colored_letter_l_sized.jpg" 
+                        alt="LaVoie logo">
+                </div>
+                <div class="col-md-6 text-uppercase text-right">
+                    <h1 class="title-super text-thin">Belinda LaVoie</h1>
+                    <h3>Front-end Ninja</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <img class="img-responsive divider-line" src="images/line-formatted.jpg" alt="line">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <img class="img-responsive" src="images/front_end_sized.jpg" alt="Computer picture">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 text-muted">
+                    <h2>Featured Work</h2>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div id="favapp_label" class="col-md-4">
+                    <img class="img-responsive" src="images/favorite_app.png" alt="Favorite apps picture"
+                        data-toggle="modal" data-target="#favapp">
+                    <h3 class="text-uppercase">Favorite apps</h3>
+                    <p><a target="_blank" href="https://play.google.com/store/apps?hl=en">Shop for a mobile app</a></p>
+                </div>
+                <div id="portfolio_label" class="col-md-4">
+                    <img class="img-responsive" src="images/portfolio.jpg" alt="Portfolio framework picture" 
+                        data-toggle="modal" data-target="#portfolio">
+                    <h3 class="text-uppercase">Portfolio Framework</h3>
+                    <p><a target="_blank" href="http://www.sitepoint.com/how-to-create-a-portfolio-site-that-will-get-you-hired/">Learn how to create a portfolio</a></p>
+                </div>
+                <div id="resume_label" class="col-md-4">
+                    <img class="img-responsive" src="images/resume.jpg" alt="Resume picture"
+                        data-toggle="modal" data-target="#resume">
+                    <h3 class="text-uppercase">Future Resume</h3>
+                    <p><a target="_blank" href="http://templatesforcv.com/cv-template/front-end-web-developer-resume/">Find a resume template</a></p>
+                </div>
+            </div>
+		</div>
+		<!-- Modal -->
+        <div class="modal fade" id="favapp" tabindex="-1" role="dialog" aria-labelledby="favapp_label" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="favapp_label_t">Favorite Apps</h4>
+                    </div>
+                    <div class="modal-body">
+                        <img class="img-responsive" src="images/favorite_app.png" alt="Favorite apps picture">
+                        Are you looking for a new mobile application?  Click on the link to shop for your next app.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="portfolio" tabindex="-1" role="dialog" aria-labelledby="portfolio_label" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="portfolio_label_t">Portfolio Framework</h4>
+                    </div>
+                    <div class="modal-body">
+                        <img class="img-responsive" src="images/portfolio.jpg" alt="Portfolio framework picture">
+                        This is the placeholder for my future portfolio framework.  Check back later to see how this changes.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="resume" tabindex="-1" role="dialog" aria-labelledby="resume_label" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="resume_label_t">Future Resume</h4>
+                    </div>
+                    <div class="modal-body">
+                    <img class="img-responsive" src="images/resume.jpg" alt="Resume picture">
+                        <p>Applying for a Front-End Web Developer position, and can't manage to get the right words for your Front-End Web 
+                        Developer resume? Well there is an easy way to write your Front-End Web developer resume. Check the Front-End Web developer 
+                        resume free sample first. 
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+		<script type="text/javascript" src="js/jquery-1.12.1.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    </body>
+</html>
